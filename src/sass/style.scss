@@ -1,0 +1,30 @@
+@import "abstracts/__abstracts-dir";
+@import "base/__base-dir";
+@import "components/__components-dir";
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Clash Display", sans-serif;
+  --black: #1b2626;
+  --gray: #d9d9d9;
+  --font-size-sm: 1.5em;
+  --font-size-md: 2.25em;
+  --font-size-lg: 3.375em;
+  --font-size-xlg: 5.063em;
+  --transition: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--black);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+}
