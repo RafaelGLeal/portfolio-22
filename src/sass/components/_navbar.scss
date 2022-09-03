@@ -10,9 +10,16 @@
     font-family: var(--font-heading);
     color: var(--gray);
     font-weight: 300;
+    letter-spacing: 1px;
   }
   &-brand {
     margin: 2em;
+  }
+  &-brand.colapsed {
+    span {
+      z-index: 1;
+      color: var(--black);
+    }
   }
   &-menu__toggle {
     width: 50px;
@@ -53,11 +60,15 @@
       transform: rotate(30deg);
       top: 50%;
       transition: 0.5s var(--transition);
+      background-color: var(--black);
+      z-index: 1;
     }
     &::after {
       top: 50%;
       transform: rotate(-30deg);
       transition: 0.5s var(--transition);
+      background-color: var(--black);
+      z-index: 1;
     }
   }
   &-menu__list {
@@ -68,13 +79,17 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 3em;
+    gap: 4em;
     transition: 0.5s var(--transition);
     transform: translateX(0%);
-
     z-index: -1;
+    background-color: var(--gray);
+    top: 0;
     li a {
       font-size: var(--font-size-md);
+      color: var(--black);
+      text-transform: capitalize;
+      font-weight: 500;
     }
   }
   &-menu__list.colapsed {

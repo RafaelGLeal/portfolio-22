@@ -1,6 +1,7 @@
 @import "abstracts/__abstracts-dir";
 @import "base/__base-dir";
 @import "components/__components-dir";
+@import "pages/__pages-dir";
 
 :root {
   --font-body: "Inter", sans-serif;
@@ -27,4 +28,8 @@ body {
 header {
   margin: 0 auto;
   width: 100%;
+}
+
+.lang {
+  margin-top: 5em;
 }
